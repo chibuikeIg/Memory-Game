@@ -61,7 +61,7 @@ window.onload = ()=>{
      document.querySelector('.fa-undo').addEventListener('click',()=>{
          let flipCards = document.querySelectorAll('.card');
          document.querySelector('.msg').innerHTML='Match Cards';
-          totalSecs = 0;
+          
          flipCards.forEach(flipCard=>{
              flipCard.setAttribute('class','card');
          });
@@ -70,7 +70,7 @@ window.onload = ()=>{
             document.querySelector('.card-container').innerHTML="";
             appendCards(cardItems)
          },1000);
-
+         totalSecs = 0;
          sec.innerHTML ='00';
          min.innerHTML = '00';
          hr.innerHTML = '00';
